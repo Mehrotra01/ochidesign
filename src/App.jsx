@@ -1,8 +1,8 @@
-// import "./App.css";
 import Front from "./components/front";
 import Navbar from "./components/navbar";
-import Marquee from "./components/Marquee";
+import Marquee from "./components/marquee";
 import About from "./components/about";
+import EyeAnimate from "./components/eyeAnimate";
 
 function App() {
 	return (
@@ -12,6 +12,7 @@ function App() {
 				<Front />
 				<Marquee />
 				<About />
+				< EyeAnimate />
 			</div>
 		</>
 	);

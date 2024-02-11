@@ -6,12 +6,12 @@ function front() {
 			<div className="textstructure mt-[150px] px-14">
 				{["we create", "eye-opening", "Presentations"].map((item, index) => {
 					return (
-						<div className="masker">
+						<div className="masker" key={index}>
 							<div className="w-fit flex items-end overflow-hidden">
 								{index === 1 && (
 									<div className="rounded-md -top-[0.5vw] h-[5vw] w-[8vw] relative bg-green-500 mr-5"></div>
 								)}
-								<p className="uppercase text-[140px] font-['Test_Founders_Grotesk_X-Cond_SmBd'] leading-[0.75]">
+								<p key={index} className="uppercase text-[140px] font-['Test_Founders_Grotesk_X-Cond_SmBd'] leading-[0.75]">
 									{item}
 								</p>
 							</div>
@@ -35,7 +35,7 @@ function front() {
 					"For public and private companies",
 					"From the first pitch to IPO",
 				].map((item, index) => (
-					<p className="text-md font-light capitalize tracking-tight leading-none ">
+					<p key={index} className="text-md font-light capitalize tracking-tight leading-none ">
 						{item}
 					</p>
 				))}
