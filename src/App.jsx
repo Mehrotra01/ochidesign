@@ -1,4 +1,4 @@
-import {  Front,  Navbar,  Marquee,  About,EyeAnimate,FeaturedProjects} from "./components/index";
+import {  Front,  Navbar,  Marquee,Footer,Ready,  About,EyeAnimate,FeaturedProjects} from "./components/index";
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
         <About />
         <EyeAnimate />
         <FeaturedProjects />
+        <Ready />
+        <Footer/>
       </div>
     </>
   );
