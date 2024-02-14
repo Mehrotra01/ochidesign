@@ -4,11 +4,10 @@ import vise from "../assets/Vise_front.jpg";
 import PremiumBlend from "../assets/premiumBlend.png";
 import Trawa from "../assets/trawa.jpg";
 import HoverBtn from "./hoverBtn";
-import ochi from "../assets/logo.png";
 
 function featuredProjects() {
   return (
-    <div className="w-full pt-28 rounded-t-2xl ">
+    <div data-scroll data-scroll-section  data-scroll-speed=".1"  className="w-full h-[400vh] pt-28 rounded-t-2xl z-20 ">
       <div className="w-full px-14 border-b-[1px] border-zinc-700 pb-12">
         <h1 className="text-[52px] font-['Neue_Montreal'] tracking-wide leading-10 ">
           Featured projects
@@ -88,7 +87,7 @@ function featuredProjects() {
         </div>
       </div>
 
-      <button className="bg-zinc-800 text-white uppercase rounded-full left-[41%] relative flex items-center gap-9 text-base tracking-tight py-4 px-6 mt-8">
+      <button className="bg-black text-white uppercase rounded-full left-[41%] relative flex items-center gap-9 text-base tracking-tight py-4 px-6 mt-8">
         <p>view all case Studies</p>
         <div className="w-2 h-2 rounded-full bg-zinc-100"></div>
       </button>

@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import { motion } from "framer-motion";
 
 function navbar() {
+  
   return (
     <div className='fixed z-[999] w-full px-14 py-5 pb-2 font-["Neue_Montreal"] grid grid-cols-12 items-center backdrop-blur-lg '>
       <div className="logo col-span-6 ">

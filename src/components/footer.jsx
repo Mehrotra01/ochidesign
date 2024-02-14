@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 function footer() {
   return (
-    <div className="w-full pt-20 h-[110vh]">
+    <div data-scroll data-scroll-section  data-scroll-speed=".1" className="w-full pt-20 h-[105vh] bg-zinc-800 z-40">
       <div className="flex ">
         <div className="w-1/2 h-[80vh] pl-14">
           <h1 className='max-w-[150px] uppercase text-9xl tracking-wide leading-[6vw] font-["Test_Founders_Grotesk_X-Cond_SmBd"] '>
@@ -11,7 +11,7 @@ function footer() {
             EYE-Opening
           </h1>
         </div>
-        <div className="w-1/2 h-[85vh]">
+        <div className="w-1/2 h-[79vh]">
           <h1 className='max-w-[150px]  uppercase text-9xl tracking-wide  font-["Test_Founders_Grotesk_X-Cond_SmBd"] '>
             {" "}
             presentations
@@ -87,7 +87,7 @@ function footer() {
           </div>
         </div>
       </div>
-      <div className="flex p-8">
+      <div className="flex p-8 pb-2">
         <div className="w-1/2  pl-10">
           <svg
             width="72"

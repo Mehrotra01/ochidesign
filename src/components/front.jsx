@@ -1,17 +1,24 @@
+import { motion } from "framer-motion";
 import React from "react";
+// import OchiFront from '../assets/ochifront.png'
 
 function front() {
+	
 	return (
-		<div className=" z-[1] w-full h-screen bg-zinc-900 pt-1">
+		<div 
+		data-scroll
+		data-scroll-section
+		data-scroll-speed="-.5"
+		 className=" z-40 w-full h-screen bg-zinc-900 pt-1">
 			<div className="textstructure mt-[150px] px-14">
 				{["we create", "eye-opening", "Presentations"].map((item, index) => {
 					return (
 						<div className="masker" key={index}>
 							<div className="w-fit flex items-end overflow-hidden">
 								{index === 1 && (
-									<div className="rounded-md -top-[0.5vw] h-[5vw] w-[8vw] relative bg-green-500 mr-5"></div>
+									<motion.div initial={{width: 0}} animate={{width:"9vw"}} transition={{ease:[0.76,0,0.24,1],duration:1,delay:2}}  className="rounded-xl  h-[6vw] relative bg-cover bg-[url('./ochifront.png')] "></motion.div>
 								)}
-								<p key={index} className="uppercase text-[140px] font-['Test_Founders_Grotesk_X-Cond_SmBd'] leading-[0.75]">
+								<p key={index} className="uppercase  text-[140px] font-['Test_Founders_Grotesk_X-Cond_SmBd'] leading-[0.75]">
 									{item}
 								</p>
 							</div>
