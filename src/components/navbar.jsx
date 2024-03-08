@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar() {
+function navbar() {
   
   return (
     <div className='fixed z-[999] w-full px-14 py-5 pb-2 font-["Neue_Montreal"] grid grid-cols-12 items-center backdrop-blur-lg '>
@@ -53,4 +53,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;

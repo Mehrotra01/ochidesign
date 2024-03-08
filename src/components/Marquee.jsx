@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-function Marquee() {
+function marquee() {
   
   return (
     <div 
@@ -21,4 +21,4 @@ function Marquee() {
   );
 }
 
-export default Marquee;
+export default marquee;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PremiumBlend from "../assets/premiumBlend.png";
 import Trawa from "../assets/trawa.jpg";
-import HoverBtn from "./HoverBtn";
-import ImageBox from "./ImageBox";
-import Gallery from "./Gallery";
+import HoverBtn from "./hoverBtn";
+import ImageBox from "./imageBox";
+import Gallery from "./gallery";
 
 function featuredProjects() {
   const [str, setStr] = useState("");

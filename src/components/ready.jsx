@@ -1,7 +1,7 @@
 import React from "react";
 import Eye from "./eye";
 
-function Ready() {
+function ready() {
   return (
     <div  className="w-full h-[130vh] bg-[#CDEA68] pt-14 rounded-t-xl overflow-hidden z-30">
       <div data-scroll data-scroll-section  data-scroll-speed="0.5"  className="w-full h-[100vh] flex items-center relative">
@@ -32,4 +32,4 @@ function Ready() {
   );
 }
 
-export default Ready;
+export default ready;

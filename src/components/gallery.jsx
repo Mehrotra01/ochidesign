@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Fyde from "../assets/fyde.png";
-import HoverBtn from "./HoverBtn";
-import ImageBox from "./ImageBox";
+import HoverBtn from "./hoverBtn";
+import ImageBox from "./imageBox";
 import vise from "../assets/Vise_front.jpg";
 
 function gallery() {
