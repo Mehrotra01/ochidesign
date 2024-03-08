@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PremiumBlend from "../assets/premiumBlend.png";
 import Trawa from "../assets/trawa.jpg";
-import HoverBtn from "./hoverBtn";
-import ImageBox from "./imageBox";
-import Gallery from "./gallery";
+import HoverBtn from "./HoverBtn";
+import ImageBox from "./ImageBox";
+import Gallery from "./Gallery";
 
 function featuredProjects() {
   const [str, setStr] = useState("");
@@ -46,7 +46,10 @@ function featuredProjects() {
           </div>
         </div>
         <span className="absolute hidden peer-hover/premium:flex peer-hover/trawa:flex top-[47%]  left-1/2 -translate-x-[50%] -translate-y-[50%] z-0">
-         <p className="text-9xl font-['Test_Founders_Grotesk_X-Cond_SmBd'] text-[#CDEA68]">{str}</p>         </span>
+          <p className="text-9xl font-['Test_Founders_Grotesk_X-Cond_SmBd'] text-[#CDEA68]">
+            {str}
+          </p>{" "}
+        </span>
       </div>
 
       <button className="bg-black text-white uppercase rounded-full left-[41%] relative flex items-center gap-9 text-base tracking-tight py-4 px-6 mt-8">

@@ -1,11 +1,12 @@
-import Front from "./front";
-import Navbar from "./navbar";
-import Marquee from "./marquee";
-import About from "./about";
-import EyeAnimate from "./eyeAnimate";
-import FeaturedProjects from "./featuredProjects";
-import Ready from "./ready";
-import Footer from "./footer";
+import Front from "./Front";
+import Navbar from "./Navbar";
+import About from "./About";
+import EyeAnimate from "./EyeAnimate";
+import FeaturedProjects from "./FeaturedProjects";
+import Ready from "./Ready";
+import Footer from "./Footer";
+import Marquee from "./Marquee";
+
 
 
 
