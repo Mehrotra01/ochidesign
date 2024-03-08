@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-// import OchiFront from '../assets/ochifront.png'
 
 function front() {
 	
@@ -16,9 +15,9 @@ function front() {
 						<div className="masker" key={index}>
 							<div className="w-fit flex items-end overflow-hidden">
 								{index === 1 && (
-									<motion.div initial={{width: 0}} animate={{width:"9vw"}} transition={{ease:[0.76,0,0.24,1],duration:1,delay:2}}  className="rounded-xl  h-[6vw] relative bg-cover bg-[url('./ochifront.png')] "></motion.div>
+									<motion.div initial={{width: 0}} animate={{width:"9vw"}} transition={{ease:[0.76,0,0.24,1],duration:1,delay:1}}  className="rounded-xl h-[6vw] relative bg-cover bg-[url('./ochifront.png')] "></motion.div>
 								)}
-								<p key={index} className="uppercase  text-[140px] font-['Test_Founders_Grotesk_X-Cond_SmBd'] leading-[0.75]">
+								<p key={index} className="uppercase pl-3 text-[140px] font-['Test_Founders_Grotesk_X-Cond_SmBd'] leading-[0.75]">
 									{item}
 								</p>
 							</div>

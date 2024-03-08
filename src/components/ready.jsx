@@ -3,8 +3,8 @@ import Eye from "./eye";
 
 function ready() {
   return (
-    <div data-scroll data-scroll-section  data-scroll-speed="-.1"   className="w-full h-[160vh] bg-[#CDEA68] pt-32 rounded-t-xl z-30">
-      <div className="w-full h-[120vh] flex items-center relative">
+    <div  className="w-full h-[130vh] bg-[#CDEA68] pt-14 rounded-t-xl overflow-hidden z-30">
+      <div data-scroll data-scroll-section  data-scroll-speed="0.5"  className="w-full h-[100vh] flex items-center relative">
         <div className="absolute  w-1/2 h-64 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] gap-10 flex justify-center">
           <Eye num={2} />
           <Eye num={3} />

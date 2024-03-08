@@ -3,7 +3,12 @@ import logo from "../assets/logo.png";
 
 function footer() {
   return (
-    <div data-scroll data-scroll-section  data-scroll-speed=".1" className="w-full pt-20 h-[105vh] bg-zinc-800 z-40">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="w-full pt-20 h-[105vh] rounded-t-2xl overflow-hidden bg-zinc-800 z-40"
+    >
       <div className="flex ">
         <div className="w-1/2 h-[80vh] pl-14">
           <h1 className='max-w-[150px] uppercase text-9xl tracking-wide leading-[6vw] font-["Test_Founders_Grotesk_X-Cond_SmBd"] '>
@@ -31,13 +36,8 @@ function footer() {
               <div className="relative top-[1vw]   w-[400px] ">
                 <span className="m-3 ml-0 ">L:</span>
                 <ul className=" decoration-none m-5 ml-0 ">
-                  <li className="underline">
-                    {" "}
-                    <p>202-1965 W 4th Ave</p>
-                  </li>
-                  <li className="underline">
-                    <p>Vancouver, Canada</p>
-                  </li>
+                  <li className="underline"> 202-1965 W 4th Ave</li>
+                  <li className="underline">Vancouver, Canada</li>
                   <br />
                   <li className="underline">30 Chukarina St</li>
                   <li className="underline">Lviv, Ukraine</li>
@@ -46,32 +46,21 @@ function footer() {
               <div className="absolute left-[40vw] top-[1vw] w-[150px] ">
                 <span className="">M:</span>
                 <ul className=" decoration-none py-5 ">
-                  <li className="underline py-1">
+                  <li className="underline py-1"> Home</li>
+                  <li className="underline"> Services</li>
+                  <ul className="underline">
                     {" "}
-                    <p>Home</p>
-                  </li>
-                  <li className="underline">
-                    {" "}
-                    <p>Services</p>
-                  </li>
-                  <li className="underline">
-                    {" "}
-                    <p>
-                      Our work
-                      <li className="underline">
-                        {" "}
-                        <p>About us</p>
-                      </li>
-                      <li className="underline">
-                        {" "}
-                        <p>Insights</p>
-                      </li>
-                      <li className="underline">
-                        {" "}
-                        <p>Contact us</p>
-                      </li>
-                    </p>
-                  </li>
+                    Our work
+                    <li className="underline"> About us</li>
+                    <li className="underline">
+                      {" "}
+                      <p>Insights</p>
+                    </li>
+                    <li className="underline">
+                      {" "}
+                      <p>Contact us</p>
+                    </li>
+                  </ul>
                 </ul>
               </div>
             </div>

@@ -1,30 +1,32 @@
-import React from "react";
-import Fyde from "../assets/fyde.png";
-import vise from "../assets/Vise_front.jpg";
+import React, { useState } from "react";
 import PremiumBlend from "../assets/premiumBlend.png";
 import Trawa from "../assets/trawa.jpg";
 import HoverBtn from "./hoverBtn";
+import ImageBox from "./imageBox";
+import Gallery from "./gallery";
 
 function featuredProjects() {
+  const [str, setStr] = useState("");
   return (
-    <div data-scroll data-scroll-section  data-scroll-speed=".1"  className="w-full h-[400vh] pt-28 rounded-t-2xl z-20 ">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.1"
+      className="w-full h-[400vh] pt-28 rounded-t-2xl z-20 "
+    >
       <div className="w-full px-14 border-b-[1px] border-zinc-700 pb-12">
         <h1 className="text-[52px] font-['Neue_Montreal'] tracking-wide leading-10 ">
           Featured projects
         </h1>
       </div>
+      <Gallery />
       <div className="cards flex gap-10 p-14 ">
-        <div className="w-1/2">
-          <div className="text-sm font-['Neue_Montreal'] flex gap-3 m-3 items-center">
-            <div className="w-2 h-2 rounded-full bg-zinc-100"></div> FYDE
-          </div>
-          <div className="card  h-[75vh] rounded-2xl overflow-hidden group hover:scale-[0.97] transition ease-in duration-300 border-zinc-300 border-[0.1px]">
-            <img
-              className="rounded-2xl group-hover:scale-110 transition ease-in-out duration-700 overflow-hidden"
-              src={Fyde}
-              alt="Fyde"
-            />
-          </div>
+        <div
+          className="w-1/2 peer/trawa"
+          onMouseEnter={() => setStr("TRAWA")}
+          onMouseLeave={() => setStr("")}
+        >
+          <ImageBox name="TRAWA" imgLink={Trawa} />
           <div className="flex my-5 gap-4">
             <HoverBtn text="Audit" />
             <HoverBtn text="CopyWriting" />
@@ -32,59 +34,19 @@ function featuredProjects() {
             <HoverBtn text="Slide design" />
           </div>
         </div>
-        <div className="w-1/2">
-          <div className="text-sm font-['Neue_Montreal'] flex gap-3 m-3 items-center">
-            <div className="w-2 h-2 rounded-full bg-zinc-100"></div>VISE
-          </div>
-          <div className="card  h-[75vh] rounded-2xl overflow-hidden group hover:scale-[0.97] transition ease-in duration-300 border-zinc-300 border-[0.1px]">
-            <img
-              src={vise}
-              alt="Vise"
-              className="rounded-2xl group-hover:scale-110 transition ease-in-out duration-700 overflow-hidden"
-            />
-          </div>
+        <div
+          className="w-1/2 peer/premium"
+          onMouseEnter={() => setStr("PREMIUM BLEND")}
+          onMouseLeave={() => setStr("")}
+        >
+          <ImageBox name="PREMIUM BLEND" imgLink={PremiumBlend} />
           <div className="flex my-5 gap-4">
             <HoverBtn text="Agency" />
             <HoverBtn text="Company presenetation" />
           </div>
         </div>
-      </div>
-      <div className="cards flex gap-10 p-14 ">
-        <div className="w-1/2">
-          <div className="text-sm font-['Neue_Montreal'] flex gap-3 m-3 uppercase items-center">
-            <div className="w-2 h-2 rounded-full  bg-zinc-100"></div> Trawa
-          </div>
-          <div className="card  h-[75vh] rounded-2xl overflow-hidden group hover:scale-[0.97] transition ease-in duration-300 border-zinc-300 border-[0.1px] ">
-            <img
-              className="rounded-2xl group-hover:scale-110 transition ease-in-out duration-700 overflow-hidden"
-              src={Trawa}
-              alt="Trawa"
-            />
-          </div>
-          <div className="flex my-5 gap-4">
-            <HoverBtn text="Audit" />
-            <HoverBtn text="CopyWriting" />
-            <HoverBtn text="Sales deck" />
-            <HoverBtn text="Slide design" />
-          </div>
-        </div>
-        <div className="w-1/2">
-          <div className="text-sm font-['Neue_Montreal'] flex gap-3 m-3 uppercase items-center">
-            <div className="w-2 h-2 rounded-full  bg-zinc-100"></div>Premium
-            Blend
-          </div>
-          <div className="card  h-[75vh] rounded-2xl overflow-hidden group hover:scale-[0.97] transition ease-in duration-300 border-zinc-300 border-[0.1px]">
-            <img
-              src={PremiumBlend}
-              alt="Vise"
-              className="rounded-2xl group-hover:scale-110 transition ease-in-out duration-700 overflow-hidden"
-            />
-          </div>
-          <div className="flex my-5 gap-4">
-            <HoverBtn text="Agency" />
-            <HoverBtn text="Company presenetation" />
-          </div>
-        </div>
+        <span className="absolute hidden peer-hover/premium:flex peer-hover/trawa:flex top-[47%]  left-1/2 -translate-x-[50%] -translate-y-[50%] z-0">
+         <p className="text-9xl font-['Test_Founders_Grotesk_X-Cond_SmBd'] text-[#CDEA68]">{str}</p>         </span>
       </div>
 
       <button className="bg-black text-white uppercase rounded-full left-[41%] relative flex items-center gap-9 text-base tracking-tight py-4 px-6 mt-8">
