@@ -1,7 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-function navbar() {
+function Navbar() {
   
   return (
     <div className='fixed z-[999] w-full px-14 py-5 pb-2 font-["Neue_Montreal"] grid grid-cols-12 items-center backdrop-blur-lg '>
@@ -54,4 +53,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
